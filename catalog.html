@@ -50,7 +50,7 @@
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
     </header>
-    <ul class="breadcrumbs">
+    <ol class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">
           <span class="visually-hidden">Главная</span>
@@ -59,7 +59,7 @@
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Гостиницы</a>
       </li>
-    </ul>
+    </ol>
 
     <section class="catalog-filter-hotels">
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -70,13 +70,13 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="pool">
+                <input class="control-input" type="checkbox" name="pool" checked>
                 Бассейн
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Parking">
+                <input class="control-input" type="checkbox" name="Parking" checked>
                 Парковка
               </label>
             </li>
@@ -94,7 +94,7 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="type-house" value="hotel">
+                <input class="control-input" type="radio" name="type-house" value="hotel" checked>
                 Гостиница
               </label>
             </li>
@@ -111,6 +111,22 @@
               </label>
             </li>
           </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, ₽</legend>
+          0 <input type="range" id="dayscount" name="dayscount" min="1500" max="10000" step="1000"> 9000
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, ₽</legend>
+          <label class="catalog-filter-label">
+            <input class="range-input" type="number" name="min-price" placeholder="от">
+          </label>
+          <label class="catalog-filter-label">
+            <input class="range-input" type="number" name="max-price" placeholder="до">
+          </label>
+          <input type="range" id="cost-night" name="cost-night" min="1500" max="10000" step="1000">
         </fieldset>
 
         <button class="button" type="submit">Применить</button>
@@ -271,4 +287,5 @@
     </section>
   </footer>
 </body>
+
 </html>
