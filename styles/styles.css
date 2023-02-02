@@ -288,12 +288,12 @@ body {
   line-height: 28px;
 }
 
-.product-type-house {
+.product-card-price {
+  text-align: right;
   color: #333333;
 }
 
-.product-card-price {
-  text-align: right;
+.product-type-house {
   color: #333333;
 }
 
