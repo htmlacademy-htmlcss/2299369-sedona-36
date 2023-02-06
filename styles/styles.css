@@ -14,13 +14,21 @@
   font-display: swap;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page-body {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .page-header {
@@ -29,7 +37,6 @@ body {
 }
 
 .navigation {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -37,7 +44,6 @@ body {
 
 .navigation-link {
   color: #000000;
-  text-transform: capitalize;
   text-decoration: none;
   background-color: #ffffff;
   text-align: center;
@@ -45,15 +51,13 @@ body {
 
 .navigation-user-link {
   color: #000000;
-  text-transform: capitalize;
   text-decoration: none;
   background-color: #ffffff;
-  text-transform: capitalize;
 }
 
 .favourites {
-  color: #FFFFFF;
-  background-color: #7DB54F;
+  color: #ffffff;
+  background-color: #7db54f;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
@@ -66,17 +70,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #756157;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.main-index{
+.main-index {
   background-color: #ffffff;
 }
 
 .hero {
-  width: 1200px;
-  height: 485px;
-  margin: 0 auto;
   background-color: #333333;
   background-image: url("../images/index/add-background.svg"), url("../images/index/index-background.jpg");
   background-position: center bottom, center;
@@ -124,8 +125,8 @@ body {
 }
 
 .real-city {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .small-area {
@@ -141,13 +142,8 @@ body {
 }
 
 .bridge-devil {
-  background-color: #82B3D3;
-  color: #FFFFFF;
-}
-
-.recommendation-because {
-  font-size: 22px;
-  line-height: 26px;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .recommendation-title {
@@ -157,11 +153,7 @@ body {
   text-transform: uppercase;
 }
 
-.houses {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.souvenirs {
+.recommendation-item-color {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -185,16 +177,13 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .subscribe {
-  width: 1200px;
-  height: 415px;
-  margin: 0 auto;
   background-color: #333333;
   background-image: url("../images/index/subscription-background.jpg");
   background-position: center;
@@ -207,41 +196,35 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .button-subscribe {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .catalog-filter-hotels {
-  /*width: 1200px;
-  height: 412px;*/
   background-color: #333333;
   background-image: url("../images/catalog/filter-background.jpg");
-  color: #000000;
   background-repeat: no-repeat;
-}
-
-.catalog-filter-hotels {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-inner {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .button-apply {
@@ -250,8 +233,8 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .button-reset {
@@ -260,7 +243,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
@@ -304,8 +287,8 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .product-card-button-more {
@@ -314,7 +297,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
 }
@@ -325,7 +308,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .subscribe-catalog {
@@ -358,18 +341,18 @@ body {
 }
 
 .pagination-link {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-decoration: none;
 }
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .main-footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .phone-number {
@@ -384,4 +367,12 @@ body {
 .social-media-link {
   text-decoration: none;
   color: #000000;
+}
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.input{
+  font-family: "PT Sans", "Arial", sans-serif;
 }
