@@ -20,26 +20,84 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 .page-body {
-  width: 1200px;
-  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.page-header {
-  color: #000000;
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.input {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
 }
 
+/*шапка*/
+
+.page-header {
+  color: #000000;
+}
+
 .navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.main-logo {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.navigation-list {
+  width: 465px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 312px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -47,12 +105,6 @@
   text-decoration: none;
   background-color: #ffffff;
   text-align: center;
-}
-
-.navigation-user-link {
-  color: #000000;
-  text-decoration: none;
-  background-color: #ffffff;
 }
 
 .favourites {
@@ -73,6 +125,13 @@
   color: #ffffff;
 }
 
+/*главная страница*/
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-index {
   background-color: #ffffff;
 }
@@ -82,7 +141,11 @@
   background-image: url("../images/index/add-background.svg"), url("../images/index/index-background.jpg");
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
-  text-align: center;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages {
@@ -94,11 +157,35 @@
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 69px 290px 0;
+  margin-bottom: 25px;
 }
 
 .advantages-reasons {
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
+  padding: 0 274px 69px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item-big {
+  display: flex;
+}
+
+.advantages-item {
+  background-color: #82b3d3;
+  color: #ffffff;
+  width: 400px;
+  padding: 113px 85px;
 }
 
 .advantages-title {
@@ -106,6 +193,16 @@
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-item-colorlight {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.advantages-item-color {
+  background-color: rgba(131, 179, 211, 0.2);
+  color: #000000;
 }
 
 .recommendation {
@@ -117,33 +214,28 @@
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 64px 347px 0;
+  margin-bottom: 20px;
 }
 
 .recommendation-because {
   font-size: 22px;
   line-height: 26px;
+  padding: 0 355px 64px;
 }
 
-.real-city {
-  background-color: #82b3d3;
-  color: #ffffff;
+.recommendation-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.small-area {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.beautiful-road {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.few-tourists {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.bridge-devil {
-  background-color: #82b3d3;
-  color: #ffffff;
+.recommendation-item {
+  width: 400px;
+  height: 385px;
+  padding: 81px 85px;
 }
 
 .recommendation-title {
@@ -159,6 +251,7 @@
 
 .search {
   text-align: center;
+  padding: 96px 304px;
 }
 
 .search-title {
@@ -189,6 +282,7 @@
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscribe-title {
@@ -216,7 +310,9 @@
   text-transform: uppercase;
 }
 
-.catalog-filter-hotels {
+/*каталог*/
+
+.catalog-form-filter {
   background-color: #333333;
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
@@ -225,6 +321,18 @@
 
 .main-inner {
   background-color: #ffffff;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 1060px;
+  margin-bottom: 70px;
 }
 
 .button-apply {
@@ -251,13 +359,32 @@
   text-decoration: none;
 }
 
+.catalog-holels-sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  padding: 70px;
+}
+
+.sorting-item{
+  list-style: none;
+}
+
 .sorting-item-link {
   color: #000000;
   text-decoration: none;
 }
 
+.product-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .product-card {
   color: #000000;
+  width: 340px;
 }
 
 .product-card-link {
@@ -315,8 +442,8 @@
   width: 1200px;
   height: 415px;
   text-align: center;
+  padding: 96px 258px 104px 258px;
 }
-
 
 .subscribe-catalog-title {
   font-weight: 700;
@@ -338,6 +465,14 @@
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
 }
 
 .pagination-link {
@@ -351,8 +486,37 @@
   background-color: #f2f2f2;
 }
 
+/*футер*/
+
 .main-footer {
   background-color: #ffffff;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.social-media {
+  width: 190px;
+  margin-right: 237px;
+}
+
+.social-media-list {
+  margin: 0;
+  list-style: none;
+}
+
+.social-media-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.phone {
+  width: 331px;
+  margin-right: auto;
 }
 
 .phone-number {
@@ -364,15 +528,7 @@
   text-decoration: none;
 }
 
-.social-media-link {
-  text-decoration: none;
-  color: #000000;
-}
-
-.button {
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
-.input{
-  font-family: "PT Sans", "Arial", sans-serif;
+.logo-html {
+  margin-left: auto;
+  max-width: 340px;
 }
