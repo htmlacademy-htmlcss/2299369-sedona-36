@@ -487,8 +487,6 @@ html {
 }
 
 .subscribe-catalog {
-  width: 1200px;
-  height: 415px;
   text-align: center;
   padding: 96px 0 0;
 }
@@ -499,8 +497,8 @@ html {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 auto 54px;
-  max-width: 592px;
+  margin: 0 auto 20px;
+  max-width: 404px;
 }
 
 .subscribe-catalog-text {
@@ -508,6 +506,18 @@ html {
   line-height: 26px;
   text-align: center;
   color: #000000;
+  margin: 0 auto 54px;
+  max-width: 475px;
+}
+
+.button-subscribe {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
   margin: 0 auto 104px;
   max-width: 684px;
 }
