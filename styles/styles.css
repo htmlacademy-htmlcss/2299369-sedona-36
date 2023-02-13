@@ -294,7 +294,7 @@ html {
 
 .search {
   text-align: center;
-  padding: 96px 0 0;
+  padding: 96px 0;
 
 }
 
@@ -322,7 +322,7 @@ html {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 0 auto 96px;
+  margin: 0 auto;
   max-width: 376px;
   display: block;
   padding: 8px 50px;
