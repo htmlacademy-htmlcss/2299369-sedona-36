@@ -356,6 +356,11 @@ html {
   max-width: 592px;
 }
 
+.subscribe-form{
+  display: flex;
+  justify-content: center;
+}
+
 .button-subscribe {
   font-weight: 700;
   font-size: 20px;
@@ -368,7 +373,6 @@ html {
   margin: 0;
   border: none;
 }
-
 
 /*каталог*/
 
