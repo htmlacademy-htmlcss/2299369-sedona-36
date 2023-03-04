@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-    <link rel="icon" href="images/header/icon.svg">
+    <link rel="icon" href="favicon.ico">
     <base href="https://htmlacademy-htmlcss.github.io/2299369-sedona-36/9/">
 </head>
 
@@ -171,7 +170,7 @@
           <p class="subscribe-text">Только полезная информация и никакого спама, <br>честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="input-subscribe" type="text" name="email" id="subscribe-email" placeholder="Ваш e-mail">
+            <input class="input input-subscribe" type="text" name="email" id="subscribe-email" placeholder="Ваш e-mail">
             <button class="button-subscribe button" type="submit">Подписаться
             </button>
           </form>
@@ -233,9 +232,10 @@
         </div>
       </footer>
     </div>
+    <!--Для того чтобы открыть модальное окно, нужно добавить класс is.active-->
     <div class="modal-container">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="button modal-close-button">
           <span class="visually-hidden">Закрыть</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
             <path fill="currentColor"
@@ -249,14 +249,14 @@
               <div class="setting-search">
                 <label class="form-label" for="date-arrival">Дата Заезда:</label>
                 <div class="form-date">
-                  <input class="date" type="text" name="date-arrival" value="27 апреля 2020" placeholder="Укажите дату"
-                    id="date-arrival" required>
+                  <input class="date input" type="text" name="date-arrival" value="27 апреля 2020"
+                    placeholder="Укажите дату" id="date-arrival" required>
                   <span class="calendar"></span>
                 </div>
                 <span class="message control-not">Мы не можем отправить вас в прошлое.</span>
                 <label class="form-label" for="date-departure">Дата Выезда:</label>
                 <div class="form-date">
-                  <input class="date" type="text" name="date-departure" value="1 сентября 2021"
+                  <input class="date input" type="text" name="date-departure" value="1 сентября 2021"
                     placeholder="Укажите дату" id="date-departure" required>
                   <span class="calendar"></span>
                 </div>
@@ -266,14 +266,15 @@
             <div class="field-group count-people">
               <label class="form-label form-label-adults" for="adults">Взрослые:</label>
               <div class="button-count-adults">
-                <button class="button-min modal-button" type="button"><span class="visually-hidden">Меньше</span>
+                <button class="button button-min modal-button" type="button"><span class="visually-hidden">Меньше</span>
                   <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
                     <path fill="currentColor" d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-                <input class="quantity-people" type="text" name="adults" value="2" placeholder="2" id="adults" required>
-                <button class="button-max modal-button" type="button">
+                <input class="quantity-people input" type="text" name="adults" value="2" placeholder="2" id="adults"
+                  required>
+                <button class="button button-max modal-button" type="button">
                   <span class="visually-hidden">Больше</span>
                   <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                     viewBox="0 0 14 14">
@@ -284,7 +285,7 @@
               <div class="form-label-kids">
                 <label class="form-label" for="kids">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
+                  <button class="button tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
                       viewBox="0 0 26 26">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
@@ -296,7 +297,7 @@
                     лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </div>
-              <div class="button-count-kids">
+              <div class="button button-count-kids">
                 <button class="button-min modal-button" type="button">
                   <span class="visually-hidden">Меньше</span>
                   <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -304,8 +305,9 @@
                     <path fill="currentColor" d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-                <input class="quantity-people" type="text" nae="kids" value="2" placeholder="2" id="kids" required>
-                <button class="button-max modal-button" type="button">
+                <input class="quantity-people input" type="text" nae="kids" value="2" placeholder="2" id="kids"
+                  required>
+                <button class="button button-max modal-button" type="button">
                   <span class="visually-hidden">Больше</span>
                   <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                     viewBox="0 0 14 14">
@@ -314,7 +316,7 @@
                 </button>
               </div>
             </div>
-            <button class="button-find" type="submit">Найти</button>
+            <button class="button button-find" type="submit">Найти</button>
           </form>
         </section>
       </div>

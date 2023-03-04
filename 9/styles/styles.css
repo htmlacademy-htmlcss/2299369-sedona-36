@@ -84,11 +84,14 @@ html {
   line-height: 24px;
   font-weight: 700;
   align-items: center;
+  position: relative;
 }
 
 .main-logo {
-  margin-right: 28px;
+  display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navigation-list {
@@ -97,7 +100,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 0 0 168px;
+  margin: 0 0 0 185px;
 }
 
 .navigation-link {
@@ -158,7 +161,7 @@ html {
   text-decoration: none;
   background-color: #ffffff;
   text-align: center;
-  padding: 22px 12px;
+  padding: 18px 12px;
   display: block;
   min-width: 16px;
   min-height: 22px;
@@ -219,7 +222,7 @@ html {
   color: #ffffff;
   display: block;
   max-width: 160px;
-  padding: 8px 34px;
+  padding: 8px 36px;
   border-radius: 4px;
   margin-left: 20px;
 }
@@ -239,9 +242,7 @@ html {
 
 .button-want-here:disabled {
   background: #E5E5E5;
-  border-radius: 4px;
 }
-
 
 /*главная страница*/
 
@@ -512,6 +513,17 @@ html {
   font-size: 18px;
   line-height: 24px;
   border-radius: 4px 0 0 4px;
+  background: #F2F2F2;
+}
+
+.input-subscribe:active {
+  outline: 2px solid #000000;
+  color: #000000;
+}
+
+.input-subscribe:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .button-subscribe {
@@ -640,7 +652,7 @@ html {
 .min-price {
   margin-right: 2px;
   border-radius: 4px 0 0 4px;
-  border: 3px solid rgba(255, 255, 255, 0);
+  outline: 3px solid rgba(255, 255, 255, 0);
 }
 
 .catalog-filter-label {
@@ -707,7 +719,6 @@ html {
 
 .button-apply:disabled {
   background: #E5E5E5;
-  border-radius: 4px;
 }
 
 .button-reset {
@@ -728,7 +739,7 @@ html {
 }
 
 .button-reset:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -737,7 +748,7 @@ html {
 }
 
 .button-reset:disabled {
-  opacity: 0.1;
+  background: #E5E5E5;
 }
 
 .breadcrumbs {
@@ -804,7 +815,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 62px;
   background-color: #ffffff;
@@ -817,9 +828,8 @@ html {
 
 .select-control:hover,
 .select-control:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
   border-radius: 4px;
-  outline: none;
 }
 
 .select-control:active {
@@ -829,7 +839,7 @@ html {
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -855,13 +865,7 @@ html {
   opacity: 0.6;
 }
 
-.control-input:disabled,
-.control-mark:disabled {
-  opacity: 0.3;
-}
-
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -872,13 +876,17 @@ html {
   content: "";
 }
 
+.control-input[type="checkbox"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
 .control-mark-radio {
   position: absolute;
   top: 2px;
   left: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
   border-radius: 50%;
   background-color: #ffffff;
 }
@@ -892,6 +900,10 @@ html {
   border-radius: 5px;
   background-color: #3f5e72;
   content: "";
+}
+
+.control-input[type="radio"]:focus + .control-mark-radio {
+  outline: 3px solid #83B3D3;
 }
 
 .control-label {
@@ -961,22 +973,22 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
 .sorting-item-link:hover {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   border-radius: 4px;
 }
 
 .sorting-item-link:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
   border-radius: 4px;
 }
 
 .sorting-item-link:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   border-radius: 4px;
 }
 
@@ -993,7 +1005,7 @@ html {
   color: #000000;
   width: 340px;
   padding: 20px;
-  border: 1px solid #e6e6e6;
+  outline: 1px solid #e6e6e6;
   border-radius: 4px
 }
 
@@ -1205,14 +1217,14 @@ html {
 .pagination-link:hover {
   background: #68A2CA;
   color: #ffffff;
-  border: 1px solid #82B3D3;
+  outline: 1px solid #82B3D3;
   border-radius: 4px;
 }
 
 .pagination-link:focus {
   background: #68A2CA;
   color: #ffffff;
-  border: 1px solid #82B3D3;
+  outline: 1px solid #82B3D3;
   border-radius: 4px;
 }
 
@@ -1344,7 +1356,6 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
@@ -1354,12 +1365,17 @@ html {
   line-height: 24px;
   color: #000000;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  /* display: none;*/
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container.is-active {
+  display: flex;
 }
 
 .modal {
   position: relative;
-  margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -1386,6 +1402,10 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .modal-close-button:hover {
@@ -1394,7 +1414,7 @@ html {
 
 .modal-close-button:focus {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .modal-close-button:active {
@@ -1458,6 +1478,10 @@ html {
   opacity: 0.3;
 }
 
+.button-find:disabled {
+  background: #E5E5E5;
+}
+
 .form-date {
   position: relative;
 }
@@ -1486,7 +1510,6 @@ html {
   border-radius: 4px;
   width: 100%;
   color: #000000;
-  opacity: 0.6;
 }
 
 .date:hover {
@@ -1497,7 +1520,7 @@ html {
 
 .date:focus {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   color: #000000;
   opacity: 0.6;
 }
@@ -1505,7 +1528,7 @@ html {
 .date:active {
   color: #000000;
   background: #F2F2F2;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .date::placeholder {
@@ -1514,7 +1537,7 @@ html {
 }
 
 .date:focus:invalid {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   color: #000000;
 }
 
