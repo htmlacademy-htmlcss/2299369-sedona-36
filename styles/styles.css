@@ -110,6 +110,7 @@ html {
   text-align: center;
   padding: 20px 0;
   display: block;
+  cursor: pointer;
 }
 
 .navigation-link:hover {
@@ -166,6 +167,7 @@ html {
   min-width: 16px;
   min-height: 22px;
   position: relative;
+  cursor: pointer;
 }
 
 .navigation-user-link:hover {
@@ -195,6 +197,7 @@ html {
   position: absolute;
   top: 10px;
   right: 4px;
+  cursor: pointer;
 }
 
 .favourites:hover,
@@ -225,6 +228,7 @@ html {
   padding: 8px 36px;
   border-radius: 4px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .button-want-here:hover,
@@ -458,6 +462,7 @@ html {
   display: block;
   padding: 8px 50px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .search-link:hover,
@@ -549,6 +554,7 @@ html {
   margin: 0;
   border: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 .button-subscribe:hover,
@@ -728,6 +734,7 @@ input[type='number'] {
   border: none;
   margin-bottom: 27px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-apply:hover,
@@ -757,6 +764,7 @@ input[type='number'] {
   background: none;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-reset:hover {
@@ -795,6 +803,7 @@ input[type='number'] {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .breadcrumbs-link,
@@ -850,6 +859,7 @@ input[type='number'] {
   appearance: none;
   margin-left: 200px;
   border: none;
+  cursor: pointer;
 }
 
 .select-control:hover,
@@ -1006,6 +1016,7 @@ input[type='number'] {
   border-radius: 4px;
   outline: 2px solid #e5e5e5;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .sorting-item-link:hover {
@@ -1068,6 +1079,7 @@ input[type='number'] {
   text-decoration: none;
   color: #000000;
   text-transform: none;
+  cursor: pointer;
 }
 
 .product-card-link:hover {
@@ -1110,6 +1122,7 @@ input[type='number'] {
   border: none;
   padding: 8px 20px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .product-card-button-favourites:hover,
@@ -1130,6 +1143,7 @@ input[type='number'] {
 .favourites-current {
   background: #7DB54F;
   padding: 8px 20px;
+  cursor: pointer;
 }
 .favourites-current:hover,
 .favourites-current:focus {
@@ -1157,7 +1171,7 @@ input[type='number'] {
   border: none;
   padding: 8px 26px;
   border-radius: 4px;
-
+  cursor: pointer;
 }
 
 .product-card-button-more:hover,
@@ -1254,6 +1268,7 @@ input[type='number'] {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .pagination-link:hover {
@@ -1283,6 +1298,7 @@ input[type='number'] {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  cursor: pointer;
 }
 
 .pagination-item {
@@ -1339,6 +1355,7 @@ input[type='number'] {
   color: #83B3D3;
   position: relative;
   padding: 12px 12px;
+  cursor: pointer;
 }
 
 .social-media-link:hover {
@@ -1361,6 +1378,7 @@ input[type='number'] {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .phone-number:hover {
@@ -1378,6 +1396,7 @@ input[type='number'] {
 .logo-html-link {
   display: flex;
   color: #000000;
+  cursor: pointer;
 }
 
 .logo-html-link:hover {
@@ -1508,6 +1527,7 @@ input[type='number'] {
   margin: 0;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button-find:hover,
@@ -1552,6 +1572,7 @@ input[type='number'] {
   border-radius: 4px;
   width: 100%;
   color: #000000;
+  cursor: pointer;
 }
 
 .date:hover {
